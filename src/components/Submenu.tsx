@@ -7,21 +7,23 @@ type SidebarLinkProps = {
     item: SidebarItem;
 }
 
-// Sidebar menu
+// Sidebar menu items (weeks)
 const SidebarLink = styled(Link)`
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 3.75rem;
-    font-size: 1.125rem;
+    font-size: 1.3rem;
     padding: 2rem;
     text-decoration: none;
+    font-weight: 900;
+    font-style: italic;
     color: #ffffff;
 
     &:hover{
-        background-color: gray;
+        background-color: #1e1f21;
         border-radius: 5px;
-        border-left: 4px solid #6d44dc
+        border-left: 4px solid #d11141
     }
 `;
 
@@ -40,21 +42,22 @@ const Active = styled.div`
     color: #ffffff;
     background-color: gray;
     border-radius: 5px;
-    border-left: 4px solid #6d44dc
+    border-left: 4px solid #FFFFF
 `;
 
+// Submenu dropdown items
 const DropdownLink = styled(Link)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 2rem;
+    height: 3rem;
     font-size: 0.875rem;
     padding-left: 3rem;
     text-decoration: none;
     color: #ffffff;
 
     &:hover {
-        background-color: #6d44dc;
+        background-color: #d11141;
     }
 
 `;

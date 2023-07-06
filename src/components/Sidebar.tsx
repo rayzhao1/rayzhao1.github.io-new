@@ -11,7 +11,7 @@ const TopNav = styled.div`
     display: flex;
     justify-content: flex-start
     align-items: center;
-    height: 5rem;
+    height: 4rem;
     background-color: black;
 `;
 
@@ -22,6 +22,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     background-color: black;
     position: fixed;
     top: 0;
+    overflow-y: scroll;
     left: ${({sidebar}) => (sidebar ? '0' : '-100%')};
 `;
 
@@ -30,8 +31,8 @@ const NavIcon = styled(Link)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    height: 5rem;
-    font-size: 2rem;
+    height: 3.8rem;
+    font-size: 1.5rem;
     margin-left: 2rem;
 `;
 
@@ -52,7 +53,7 @@ const Sidebar: React.FC = () => {
             <SidebarNav sidebar = {sidebar}>
                 <SidebarWrap>
                     <NavIcon to='#' onClick={showSidebar}>
-                        <AiOutlineClose />
+                        <AiOutlineMenu />
                     </NavIcon>
                     {SidebarData.map((item, index) => {
                         return <Submenu item={item} key={index} />
