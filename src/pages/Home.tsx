@@ -15,6 +15,44 @@ export const Home: FC = () => {
             <body>
                 <div>
                     <table>
+                        <tr>
+                    <td className = "dtext" width='10px'> 7/10 <br/>
+                            <Link to = "https://cs61a.org/lab/lab05/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Lab05</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
+                             <br/>
+                             <Link to = "https://drive.google.com/file/d/1awq9SCXcQwjjFZXD6o-6uv4XNI8gfw1a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <button className = "pinkish">Wksht</button>
+                            </Link>
+                            
+                        </td>
+                        <td className = "dtext" width='10px'> 7/11 <br/>
+                        <Link to = "https://cs61a.org/disc/disc05/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Disc05</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
+                             <br/>
+                            <PopButton color = "pinkish" msg = "">
+                                Msg
+                            </PopButton>
+                        </td>
+                        <td className = "dtext" width='10px'> 7/12 <br/>
+                        <Link to = "https://cs61a.org/lab/lab06/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Lab06</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
+                             <br/>
+                            <PopButton color = "pinkish" msg = "">
+                                Msg
+                            </PopButton>
+                            </td>
+                        <td className = "dtext" width='10px'><br/>
+                        </td>
+                    </tr>
                     <tr>
                         <td className = "dtext" width='10px'> 7/3 <br/>
                             <Link to = "https://cs61a.org/disc/lab03/" target="_blank" rel="noopener noreferrer">
@@ -135,6 +173,7 @@ export const Home: FC = () => {
                                 Msg
                             </PopButton>
                         </td>
+                        <td className = "dtext" width='10px'><br/></td>
                     </tr>
                     </table>
                 </div>

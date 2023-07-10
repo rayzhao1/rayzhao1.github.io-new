@@ -24,7 +24,7 @@ export const SidebarData: SidebarItem[] = [
             },
             {
                 title: 'Tree Recursion',
-                path: '/demo/recursion'
+                path: '/demo/nonplussed'
             },
             {
                 title: 'Generators',
@@ -85,6 +85,12 @@ export const SidebarData: SidebarItem[] = [
     {
         title: 'Week 4',
         path: '/week4',
+        subnav: [
+            {           
+                title: 'Iterators, Generators',
+                path: '/week4/itergen'
+            }
+        ]
     },
     {
         title: 'Week 5',
