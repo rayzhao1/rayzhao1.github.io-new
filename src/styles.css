@@ -6,6 +6,15 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.yblank {
+  padding: 20px 30px; 
+  position: absolute; 
+  top: 100px; 
+  bottom: 100px;
+  content: ".";
+  visibility: hidden;
+}
+
 .orish {
   background-color: #E99549
 }
@@ -117,6 +126,11 @@ textarea {
 .invis {
   color: white;
   height: 100px;
+}
+
+.invis1 {
+  color: white;
+  height: 60px;
 }
 
 p {

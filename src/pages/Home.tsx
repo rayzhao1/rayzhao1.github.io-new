@@ -1,3 +1,4 @@
+import React from 'react';
 import { FC } from 'react';
 import {Link, Routes, Router} from 'react-router-dom';
 import logo from '../images/favicon.png'
@@ -14,9 +15,65 @@ export const Home: FC = () => {
             </header>
             <body>
                 <div>
+                    <div className = "centered">
+                        <Link to = "https://drive.google.com/drive/folders/1ZA1e4JD_zRk7sEX3ZLWjC_FCTVxqJw62?usp=sharing" target="_blank" rel="noopener noreferrer">
+                            <button className = "b bluish center b">Google Drive</button>
+                        </Link>
+                    </div>
+                    <div className = "invis1">
+                        i
+                    </div>
                     <table>
+                        
+                    <tr>
+                        <td className = "dtext" width='10px'> 7/17 <br/>
+                            <Link to = "https://cs61a.org/lab/lab07/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Lab07</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
+                             <br/>
+                             <Link to = "https://drive.google.com/file/d/1bPhDOfk_xUiGWnY2PMvjMp3vSvd4o4xB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                <button className = "pinkish">Wksht</button>
+                            </Link>
+                            
+                        </td>
+                        <td className = "dtext" width='10px'> 7/18 <br/>
+                        <Link to = "https://cs61a.org/disc/disc06/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Disc06</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
+                             <br/>
+                            <PopButton color = "pinkish" msg = "">
+                                Msg
+                            </PopButton>
+                        </td>
+                        <td className = "dtext" width='10px'> 7/19 <br/>
+                        <Link to = "https://cs61a.org/lab/lab08/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Lab08</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
+                             <br/>
+                            <PopButton color = "pinkish" msg = "">
+                                Msg
+                            </PopButton>
+                        </td>
+                        <td className = "dtext" width='10px'> 7/20 <br/>
+                        <Link to = "https://cs61a.org/lab/disc07/" target="_blank" rel="noopener noreferrer">
+                                <button className = "orish">Disc07</button>
+                            </Link>
+                            <br/>
+                            <NavButton pathname='/week5/trees-linked-lists' children = "Notes" color = 'redish'/> 
+                             <br/>
+                            <PopButton color = "pinkish" msg = "">
+                                Msg
+                            </PopButton>
+                        </td>
+                    </tr>
                         <tr>
-                    <td className = "dtext" width='10px'> 7/10 <br/>
+                        <td className = "dtext" width='10px'> 7/10 <br/>
                             <Link to = "https://cs61a.org/lab/lab05/" target="_blank" rel="noopener noreferrer">
                                 <button className = "orish">Lab05</button>
                             </Link>
@@ -44,7 +101,7 @@ export const Home: FC = () => {
                                 <button className = "orish">Lab06</button>
                             </Link>
                             <br/>
-                            <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
+                            <NavButton pathname='/week4/efficiency' children = "Notes" color = 'redish'/> 
                              <br/>
                             <PopButton color = "pinkish" msg = "">
                                 Msg
@@ -179,9 +236,9 @@ export const Home: FC = () => {
                 </div>
                 <h2>Quick Links</h2>
                     <div className = "centered">
-                            <Link to = "https://forms.gle/Cw6i9kQ3QN82TTeF7" target="_blank" rel="noopener noreferrer">
-                                <button className = "b bluish center b">Temperature Check</button>
-                            </Link>
+                        <Link to = "https://forms.gle/Cw6i9kQ3QN82TTeF7" target="_blank" rel="noopener noreferrer">
+                            <button className = "b bluish center b">Temperature Check</button>
+                        </Link>
                     </div>
                     <div className = "invis">
                         i
@@ -202,6 +259,7 @@ export const Home: FC = () => {
                         <ul>
                             <li>Additions</li>
                                 <ul>
+                                    <li>added slides button, increased slide embed size</li>
                                     <li>Temperature check/attendance form buttons</li>
                                     <li>Calendar</li>
                                     <li>Change log</li>

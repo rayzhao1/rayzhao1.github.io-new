@@ -28,7 +28,7 @@ export const SidebarData: SidebarItem[] = [
             },
             {
                 title: 'Generators',
-                path: '/week2/generator'
+                path: '/demo/pathyielder'
             }
         ]
     },
@@ -89,12 +89,26 @@ export const SidebarData: SidebarItem[] = [
             {           
                 title: 'Iterators, Generators',
                 path: '/week4/itergen'
+            },
+            {
+                title: 'Efficiency',
+                path: '/week4/efficiency'
             }
         ]
     },
     {
         title: 'Week 5',
         path: '/week5',
+        subnav: [
+            {           
+                title: 'OOP, Inheritance, Repr/Str',
+                path: '/week5/oop'
+            },
+            {           
+                title: 'Trees and Linked Lists',
+                path: '/week5/trees-linked-lists'
+            }
+        ]
     },
     {
         title: 'Week 6',

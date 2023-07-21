@@ -1,15 +1,16 @@
 import React from 'react';
 import { FC } from 'react';
 
-export const IterGen: FC = () => {
+export const Eff: FC = () => {
     return (
         <div>
             <div> 
                 <iframe 
                 title="Slide" 
-                src="https://docs.google.com/presentation/d/e/2PACX-1vQevCb4htSI33K0PQEYKm4WngOHJrSgXwH16hb6KGXSmH4Rxp1ytUfqvsfW8ghD-wEYHGenqUqvWrxd/embed?start=false&loop=false&delayms=3000"
+                src="https://docs.google.com/presentation/d/e/2PACX-1vRYTEiIUB64-TQapyd8qepNM9jB-vaf0pzJW6rab7wgJD1plb19suBIEKme4CPHoi5N3qHaTUBHJuzH/pub?start=false&loop=false&delayms=3000" allowFullScreen 
                 width="1200" height="675">
-                </iframe>
+
+                 </iframe>
             </div>
             <form>
                 <label>Notes</label>
