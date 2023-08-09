@@ -19,6 +19,11 @@ import { Eff } from './pages/Eff';
 import { PathYielder } from './pages/PathYielder'
 import { OOP } from './pages/OOP';
 import { LinkedLists } from './pages/LinkedLists';
+import { Tail } from './pages/Tail';
+import { Interpreters } from './pages/Interpreters';
+import { Scheme } from './pages/Scheme';
+import { SQL } from './pages/SQL';
+import { Regex } from './pages/Regex';
 
 const App: FC = () => {
   return (
@@ -41,6 +46,11 @@ const App: FC = () => {
           <Route path='/week4/efficiency' element={<Eff/>}/>
           <Route path='/week5/oop' element={<OOP/>}/>
           <Route path='/week5/trees-linked-lists' element={<LinkedLists/>}/>
+          <Route path='/week6/scheme' element={<Scheme/>}/>
+          <Route path='/week6/interpreters' element={<Interpreters/>}/>
+          <Route path='/week6/tail' element={<Tail/>}/>
+          <Route path='/week7/SQL' element={<SQL/>}/>
+          <Route path='/week7/regex' element={<Regex/>}/>
         </Routes>
     </>
   );

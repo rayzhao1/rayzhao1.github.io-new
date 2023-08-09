@@ -113,13 +113,34 @@ export const SidebarData: SidebarItem[] = [
     {
         title: 'Week 6',
         path: '/week6',
+        subnav: [
+            {           
+                title: 'Scheme',
+                path: '/week6/scheme'
+            },
+            {           
+                title: 'Tail Recursion',
+                path: '/week6/tail'
+            },
+            {
+                title: 'Interpreters',
+                path: '/week6/interpreters'
+            }
+        ]
     },
     {
         title: 'Week 7',
         path: '/week7',
-    },
-    {
-        title: 'Week 8',
-        path: '/week8',
+        subnav: [
+            {           
+                title: 'SQL',
+                path: '/week7/SQL'
+            },
+            {
+                title: 'Regular Expressions',
+                path: '/week7/regex'
+            }
+        ]
+        
     }
 ];
