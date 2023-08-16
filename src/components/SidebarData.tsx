@@ -1,11 +1,10 @@
 import { AiFillCaretDown, AiFillCaretUp, AiOutlineHome } from "react-icons/ai";
 import { SidebarItem } from "../models/SidebarItem";
-import logo from '../images/61yayy.png'
 
 export const SidebarData: SidebarItem[] = [
     {
         title: 'Home',
-        path: '/',
+        path: '/su23',
         icon: AiOutlineHome,
         iconClosed: <AiFillCaretDown />,
         iconOpened: <AiFillCaretUp />
@@ -59,12 +58,8 @@ export const SidebarData: SidebarItem[] = [
                 path: '/week2/hofs'
             },
             {
-                title: 'Recursion',
+                title: 'Recursion, Tree Recursion',
                 path: '/week2/rec'
-            },
-            {
-                title: 'Tree Recursion',
-                path: '/week2/treerecursion'
             }
         ]
     },

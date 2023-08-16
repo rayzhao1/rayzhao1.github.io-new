@@ -1,36 +1,40 @@
 import React, { FC } from 'react';
-import { Home } from './pages/Home';
-import { VarFun } from './pages/VarFun'
-import { Intro } from './pages/Intro'
+import { Su23 } from './pages/Su23';
+import { VarFun } from './pages/su23/VarFun'
+import { Intro } from './pages/su23/Intro'
 //16:04
 import './styles.css';
-import Sidebar from './components/Sidebar';
+import Sidebars from './components/Sidebars';
 import {Routes, Route} from 'react-router-dom';
-import { Control } from './pages/Control';
-import { Env } from './pages/Env';
-import { Practice } from './pages/Practice'
-import { Hof } from './pages/Hof'
-import { Rec } from './pages/Rec'
-import { TreeADT } from './pages/TreeADT'
-import { Lists } from './pages/Lists'
-import { IterGen } from './pages/IterGen';
-import { Nonplussed } from './pages/Nonplussed'
-import { Eff } from './pages/Eff';
-import { PathYielder } from './pages/PathYielder'
-import { OOP } from './pages/OOP';
-import { LinkedLists } from './pages/LinkedLists';
-import { Tail } from './pages/Tail';
-import { Interpreters } from './pages/Interpreters';
-import { Scheme } from './pages/Scheme';
-import { SQL } from './pages/SQL';
-import { Regex } from './pages/Regex';
+import { Control } from './pages/su23/Control';
+import { Env } from './pages/su23/Env';
+import { Practice } from './pages/su23/Practice'
+import { Hof } from './pages/su23/Hof'
+import { Rec } from './pages/su23/Rec'
+import { TreeADT } from './pages/su23/TreeADT'
+import { Lists } from './pages/su23/Lists'
+import { IterGen } from './pages/su23/IterGen';
+import { Nonplussed } from './pages/su23/Nonplussed'
+import { Eff } from './pages/su23/Eff';
+import { PathYielder } from './pages/su23/PathYielder'
+import { OOP } from './pages/su23/OOP';
+import { LinkedLists } from './pages/su23/LinkedLists';
+import { Tail } from './pages/su23/Tail';
+import { Interpreters } from './pages/su23/Interpreters';
+import { Scheme } from './pages/su23/Scheme';
+import { SQL } from './pages/su23/SQL';
+import { Regex } from './pages/su23/Regex';
+import { Fa23_61A } from './pages/Fa23_61A';
+import { Home } from './pages/Home';
 
 const App: FC = () => {
   return (
     <>
-    <Sidebar />
+    <Sidebars />
         <Routes>
-          <Route path='/' element={<Home/>}/>
+          <Route path='/home' element ={<Home/>}/>
+          <Route path='/' element={<Fa23_61A/>}/>
+          <Route path='/su23' element={<Su23/>}/>
           <Route path='/week1/intro' element={<Intro/>}/>
           <Route path='/week1/basics' element={<VarFun/>}/>
           <Route path='/week1/control' element={<Control/>}/>

@@ -13,6 +13,10 @@ const TopNav = styled.div`
     align-items: center;
     height: 4rem;
     background-color: black;
+    color: white;
+    align-self: center;
+    align-items: center;
+    align-content: center;
 `;
 
 // Side bar & close icon.
@@ -39,7 +43,7 @@ const NavIcon = styled(Link)`
 const SidebarWrap = styled.div`
 `;
 
-const Sidebar: React.FC = () => {
+const Sidebars: React.FC = () => {
     const [sidebar, setSidebar] = useState(false);
     const showSidebar = () => setSidebar(!sidebar);
 
@@ -49,6 +53,23 @@ const Sidebar: React.FC = () => {
                 <NavIcon to='#' onClick={showSidebar}>
                     <AiOutlineMenu />
                 </NavIcon>
+                <div id = 'in_line'>
+                    <ul>
+                        <li><a href = '/su23'>CS 61A Su'23</a></li>
+                        <li><a href = '/'>CS 61A Fa'22</a></li>
+                        <li><a href = '/home'>Home</a></li>
+                    </ul>
+                </div>
+                <div id = 'in_line'>
+                    <ul>
+                        <li><a href = '#'>Teaching &<div id="x25BE"></div></a></li>
+                        <ul className='dropdown'>
+                            <li><a href = '#'>CS 61A Fall 23</a></li>
+                            <li><a href = '#'>CS 61A Summer 23</a></li>
+                            <li><a href = '#'>Origami</a></li>
+                        </ul>
+                    </ul>
+                </div>
             </TopNav>
             <SidebarNav sidebar = {sidebar}>
                 <SidebarWrap>
@@ -64,4 +85,4 @@ const Sidebar: React.FC = () => {
     );
     }
 
-export default Sidebar;
+export default Sidebars;
