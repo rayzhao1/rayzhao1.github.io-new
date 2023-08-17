@@ -9,13 +9,6 @@ export const Su23: FC = () => {
     return (
         <main>
             <header>
-                This is an archive!
-                <br/>
-                <NavButton pathname='/' children = "Go back home" color = 'redish'/> 
-                <br/>
-                <div className = "centered">
-                        <NavButton pathname='/' children = "Go back home" color = 'redish'/>
-                </div>
                 <h1 className='h1_su23'>CS 61A Summer 2023</h1> 
                 <img src={logo} alt = "hi"></img>
                 <p>Lab Interns! Iris Zhou, Kevin Lee, Ruby Yan</p>
@@ -24,343 +17,347 @@ export const Su23: FC = () => {
                 <div>
                     <div className = "centered">
                         <Link to = "https://drive.google.com/drive/folders/1ZA1e4JD_zRk7sEX3ZLWjC_FCTVxqJw62?usp=sharing" target="_blank" rel="noopener noreferrer">
-                            <button className = "b bluish center b">Google Drive</button>
+                            <button className = "bluish center b">Google Drive</button>
                         </Link>
                     </div>
                     <div className = "invis1">
                         i
                     </div>
-                    <table>
-                        
-                    <tr>
-                        <td className = "dtext" width='10px'> 8/7 <br/>
-                            <Link to = "https://cs61a.org/lab/lab13/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab11</button>
-                            </Link>
-                            <Link to = "https://drive.google.com/file/d/1xcTwUS_fZw8Q1NOTRQgkccHaSx_A9bYd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <button className = "pinkish">Wksht</button>
-                            </Link>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 8/8 <br/>
-                        <Link to = "https://cs61a.org/disc/disc12/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc10</button>
-                            </Link>
-                            <Link to = "https://drive.google.com/file/d/1xcTwUS_fZw8Q1NOTRQgkccHaSx_A9bYd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <button className = "pinkish">Wksht</button>
-                            </Link>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 7/31 <br/>
-                            <Link to = "https://cs61a.org/lab/lab11/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab11</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week6/interpreters' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 8/1 <br/>
-                        <Link to = "https://cs61a.org/disc/disc10/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc10</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 8/2 <br/>
-                        <Link to = "https://cs61a.org/lab/lab12/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab12</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 8/3 <br/>
-                        <Link to = "https://cs61a.org/lab/disc11/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc11</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week7/SQL' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 7/24 <br/>
-                            <Link to = "https://cs61a.org/lab/lab09/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab09</button>
-                            </Link>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 7/25 <br/>
-                        <Link to = "https://cs61a.org/disc/disc08/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc08</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week6/scheme' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/26 <br/>
-                        <Link to = "https://cs61a.org/lab/lab10/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab10</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week6/scheme' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/27 <br/>
-                        <Link to = "https://cs61a.org/lab/disc09/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc09</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week6/interpreters' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 7/17 <br/>
-                            <Link to = "https://cs61a.org/lab/lab07/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab07</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
-                             <br/>
-                             <Link to = "https://drive.google.com/file/d/1bPhDOfk_xUiGWnY2PMvjMp3vSvd4o4xB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <button className = "pinkish">Wksht</button>
-                            </Link>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 7/18 <br/>
-                        <Link to = "https://cs61a.org/disc/disc06/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc06</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/19 <br/>
-                        <Link to = "https://cs61a.org/lab/lab08/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab08</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/20 <br/>
-                        <Link to = "https://cs61a.org/lab/disc07/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc07</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week5/trees-linked-lists' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                    </tr>
+                    <table className = 'table_calendar'>
+                        <tbody className='tbody_calendar'>
                         <tr>
-                        <td className = "dtext" width='10px'> 7/10 <br/>
-                            <Link to = "https://cs61a.org/lab/lab05/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab05</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
-                             <br/>
-                             <Link to = "https://drive.google.com/file/d/1awq9SCXcQwjjFZXD6o-6uv4XNI8gfw1a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
-                                <button className = "pinkish">Wksht</button>
-                            </Link>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 7/11 <br/>
-                        <Link to = "https://cs61a.org/disc/disc05/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc05</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/12 <br/>
-                        <Link to = "https://cs61a.org/lab/lab06/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab06</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week4/efficiency' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
+                            <td className = "dtext" width='10px'> 8/7 <br/>
+                                <Link to = "https://cs61a.org/lab/lab13/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab11</button>
+                                </Link>
+                                <Link to = "https://drive.google.com/file/d/1xcTwUS_fZw8Q1NOTRQgkccHaSx_A9bYd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <button className = "pinkish">Wksht</button>
+                                </Link>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                
                             </td>
-                        <td className = "dtext" width='10px'><br/>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 7/3 <br/>
-                            <Link to = "https://cs61a.org/disc/lab03/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab03</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week2/rec' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'>  <br/>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/5 <br/>
-                        <Link to = "https://cs61a.org/lab/lab04/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab04</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week3/sequences' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 7/6 <br/>
-                        <Link to = "https://cs61a.org/disc/disc04/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc04</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
+                            <td className = "dtext" width='10px'> 8/8 <br/>
+                            <Link to = "https://cs61a.org/disc/disc12/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc10</button>
+                                </Link>
+                                <Link to = "https://drive.google.com/file/d/1xcTwUS_fZw8Q1NOTRQgkccHaSx_A9bYd/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <button className = "pinkish">Wksht</button>
+                                </Link>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
                             </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 6/26 <br/>
-                            <Link to = "https://cs61a.org/disc/lab01/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab01</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week1/control' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 6/27 <br/>
-                        <Link to = "https://cs61a.org/disc/disc02/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc02</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week2/hofs' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 6/28 <br/>
-                        <Link to = "https://cs61a.org/lab/lab02/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab02</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week2/hofs' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 6/29 <br/>
-                        <Link to = "https://cs61a.org/disc/disc03/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc03</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week2/rec' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "">
-                                Msg
-                            </PopButton>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 7/31 <br/>
+                                <Link to = "https://cs61a.org/lab/lab11/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab11</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week6/interpreters' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                
                             </td>
-                    </tr>
-                    <tr>
-                        <td className = "dtext" width='10px'> 6/20 <br/>
-                            <Link to = "https://cs61a.org/disc/disc00/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc00</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
-                                Msg
-                            </PopButton>
-                            
-                        </td>
-                        <td className = "dtext" width='10px'> 6/21 <br/>
-                        <Link to = "https://cs61a.org/lab/lab00/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Lab00</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'> 6/22 <br/>
-                        <Link to = "https://cs61a.org/disc/disc01/" target="_blank" rel="noopener noreferrer">
-                                <button className = "orish">Disc01</button>
-                            </Link>
-                            <br/>
-                            <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
-                             <br/>
-                            <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
-                                Msg
-                            </PopButton>
-                        </td>
-                        <td className = "dtext" width='10px'><br/></td>
-                    </tr>
+                            <td className = "dtext" width='10px'> 8/1 <br/>
+                            <Link to = "https://cs61a.org/disc/disc10/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc10</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 8/2 <br/>
+                            <Link to = "https://cs61a.org/lab/lab12/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab12</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 8/3 <br/>
+                            <Link to = "https://cs61a.org/lab/disc11/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc11</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week7/SQL' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 7/24 <br/>
+                                <Link to = "https://cs61a.org/lab/lab09/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab09</button>
+                                </Link>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'> 7/25 <br/>
+                            <Link to = "https://cs61a.org/disc/disc08/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc08</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week6/scheme' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/26 <br/>
+                            <Link to = "https://cs61a.org/lab/lab10/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab10</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week6/scheme' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/27 <br/>
+                            <Link to = "https://cs61a.org/lab/disc09/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc09</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week6/interpreters' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 7/17 <br/>
+                                <Link to = "https://cs61a.org/lab/lab07/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab07</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <Link to = "https://drive.google.com/file/d/1bPhDOfk_xUiGWnY2PMvjMp3vSvd4o4xB/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <button className = "pinkish">Wksht</button>
+                                </Link>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'> 7/18 <br/>
+                            <Link to = "https://cs61a.org/disc/disc06/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc06</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/19 <br/>
+                            <Link to = "https://cs61a.org/lab/lab08/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab08</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week5/oop' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/20 <br/>
+                            <Link to = "https://cs61a.org/lab/disc07/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc07</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week5/trees-linked-lists' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                        </tr>
+                            <tr>
+                            <td className = "dtext" width='10px'> 7/10 <br/>
+                                <Link to = "https://cs61a.org/lab/lab05/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab05</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <Link to = "https://drive.google.com/file/d/1awq9SCXcQwjjFZXD6o-6uv4XNI8gfw1a/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+                                    <button className = "pinkish">Wksht</button>
+                                </Link>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'> 7/11 <br/>
+                            <Link to = "https://cs61a.org/disc/disc05/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc05</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week4/itergen' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/12 <br/>
+                            <Link to = "https://cs61a.org/lab/lab06/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab06</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week4/efficiency' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                </td>
+                            <td className = "dtext" width='10px'><br/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 7/3 <br/>
+                                <Link to = "https://cs61a.org/disc/lab03/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab03</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week2/rec' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'>  <br/>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/5 <br/>
+                            <Link to = "https://cs61a.org/lab/lab04/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab04</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week3/sequences' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 7/6 <br/>
+                            <Link to = "https://cs61a.org/disc/disc04/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc04</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week3/treeadt' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 6/26 <br/>
+                                <Link to = "https://cs61a.org/disc/lab01/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab01</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week1/control' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'> 6/27 <br/>
+                            <Link to = "https://cs61a.org/disc/disc02/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc02</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week2/hofs' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 6/28 <br/>
+                            <Link to = "https://cs61a.org/lab/lab02/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab02</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week2/hofs' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 6/29 <br/>
+                            <Link to = "https://cs61a.org/disc/disc03/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc03</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week2/rec' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "">
+                                    Msg
+                                </PopButton>
+                                </td>
+                        </tr>
+                        <tr>
+                            <td className = "dtext" width='10px'> 6/20 <br/>
+                                <Link to = "https://cs61a.org/disc/disc00/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc00</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
+                                    Msg
+                                </PopButton>
+                                
+                            </td>
+                            <td className = "dtext" width='10px'> 6/21 <br/>
+                            <Link to = "https://cs61a.org/lab/lab00/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Lab00</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'> 6/22 <br/>
+                            <Link to = "https://cs61a.org/disc/disc01/" target="_blank" rel="noopener noreferrer">
+                                    <button className = "orish">Disc01</button>
+                                </Link>
+                                <br/>
+                                <NavButton pathname='/week1/intro' children = "Notes" color = 'redish'/> 
+                                <br/>
+                                <PopButton color = "pinkish" msg = "Hi, it was really nice to meet you all today! Here are some quick reminders: Please fill out... (sign in thru Berkeley account) Attendance form Welcome Form (Ideally complete before 6/21 @ midnight;">
+                                    Msg
+                                </PopButton>
+                            </td>
+                            <td className = "dtext" width='10px'><br/></td>
+                        </tr>
+                        </tbody>
                     </table>
                 </div>
                 <h2>Quick Links</h2>
+                    <div className = "invis2">
+                        i
+                    </div>
                     <div className = "centered">
                         <Link to = "https://forms.gle/Cw6i9kQ3QN82TTeF7" target="_blank" rel="noopener noreferrer">
                             <button className = "b bluish center b">Temperature Check</button>
                         </Link>
                     </div>
-                    <div className = "invis2">
+                    <div className = "invis">
                         i
                     </div>
                     <div>

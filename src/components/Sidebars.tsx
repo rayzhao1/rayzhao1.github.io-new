@@ -60,16 +60,6 @@ const Sidebars: React.FC = () => {
                         <li><a href = '/home'>Home</a></li>
                     </ul>
                 </div>
-                <div id = 'in_line'>
-                    <ul>
-                        <li><a href = '#'>Teaching &<div id="x25BE"></div></a></li>
-                        <ul className='dropdown'>
-                            <li><a href = '#'>CS 61A Fall 23</a></li>
-                            <li><a href = '#'>CS 61A Summer 23</a></li>
-                            <li><a href = '#'>Origami</a></li>
-                        </ul>
-                    </ul>
-                </div>
             </TopNav>
             <SidebarNav sidebar = {sidebar}>
                 <SidebarWrap>
