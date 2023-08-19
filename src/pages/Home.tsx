@@ -22,7 +22,7 @@ export const Home: FC = () => {
                             <a href='/'>Fall 2023</a>
                         </li>
                         <li>
-                            <a href='/su23'>Summer 2023 Archive</a>
+                            <NavLink to="/su23">Summer 2023 Archive</NavLink>
                         </li>
                         <li>
                             <a href='https://drive.google.com/drive/folders/1SISj6qJ_haI-p3CUCEL19DQf-RpeWdt1?usp=sharing' 
