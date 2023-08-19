@@ -1,19 +1,34 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { Link, useMatch, useResolvedPath} from 'react-router-dom';
+import { NavLink, Link, useMatch, useResolvedPath} from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
+import { AiOutlineMenu, AiFillHome, AiOutlineClose, AiTwotoneFolder, AiTwotoneFolderOpen } from 'react-icons/ai';
 import { SidebarData } from './SidebarData';
 import Submenu from './Submenu';
 
 // Top Bar
-const TopNav = styled.div`
+
+const NavWrapper = styled.div`
     display: flex;
-    justify-content: flex-start
+    background-color: black;
+    justify-content: space-between;
+    
+`;
+const LeftNav = styled.div`
+    display: flex;
+    justify-content: flex-end
     align-items: center;
     height: 4rem;
-    background-color: black;
-    color: white;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+`;
+
+const RightNav = styled.div`
+    display: flex;
+    justify-content: flex-end;
+    width: 4rem;
+    height: 4rem;
     align-self: center;
     align-items: center;
     align-content: center;
@@ -31,13 +46,23 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
 `;
 
 // Menu Icon
-const NavIcon = styled(Link)`
+const NavMenu = styled(Link)`
     display: flex;
     justify-content: flex-start;
     align-items: center;
     height: 3.8rem;
     font-size: 1.5rem;
     margin-left: 2rem;
+`;
+
+const NavHome = styled(Link)`
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 3.8rem;
+    font-size: 1.5rem;
+    color: white;
+    margin-right: 2rem;
 `;
 
 const SidebarWrap = styled.div`
@@ -48,24 +73,61 @@ const Sidebars: React.FC = () => {
     const showSidebar = () => setSidebar(!sidebar);
 
     return (
-        <IconContext.Provider value ={{ color: '#fff' }}>
-            <TopNav>
-                <NavIcon to='#' onClick={showSidebar}>
-                    <AiOutlineMenu />
-                </NavIcon>
-                <div id = 'in_line'>
-                    <ul>
-                        <li><a href = '/su23'>CS 61A Su'23</a></li>
-                        <li><a href = '/'>CS 61A Fa'22</a></li>
-                        <li><a href = '/home'>Home</a></li>
-                    </ul>
-                </div>
-            </TopNav>
+        <IconContext.Provider value ={{ color: 'white' }}>
+            <NavWrapper>
+                <LeftNav>
+                    <NavMenu to='#' onClick={showSidebar}>
+                        <AiTwotoneFolder />
+                    </NavMenu>
+                    <div id = 'in_line'>
+                        <ul>
+                        <NavLink
+                            to="/"  
+                            style={({ isActive, isPending }) => {
+                                return {
+                                fontWeight: isActive ? "bold" : "",
+                                color: isPending ? "red" : "white",
+                                };
+                            }}
+                            >
+                                Home
+                        </NavLink>
+                        <NavLink
+                            to="/61/fa23/problems"  
+                            style={({ isActive, isPending }) => {
+                                return {
+                                fontWeight: isActive ? "bold" : "",
+                                color: isPending ? "red" : "white",
+                                };
+                            }}
+                            >
+                                Problems
+                        </NavLink>
+                        <NavLink
+                            to="/61a/fa23/videos"  
+                            style={({ isActive, isPending }) => {
+                                return {
+                                fontWeight: isActive ? "bold" : "",
+                                color: isPending ? "red" : "white",
+                                };
+                            }}
+                            >
+                                Videos
+                        </NavLink>
+                        </ul>
+                    </div>
+                </LeftNav>
+                <RightNav>
+                    <NavHome to='/home'>
+                        <AiFillHome/>
+                    </NavHome>
+                </RightNav>
+            </NavWrapper>
             <SidebarNav sidebar = {sidebar}>
                 <SidebarWrap>
-                    <NavIcon to='#' onClick={showSidebar}>
-                        <AiOutlineMenu />
-                    </NavIcon>
+                    <NavMenu to='#' onClick={showSidebar}>
+                        <AiOutlineClose />
+                    </NavMenu>
                     {SidebarData.map((item, index) => {
                         return <Submenu item={item} key={index} />
                     })}

@@ -5,6 +5,7 @@ import { Intro } from './pages/su23/Intro'
 //16:04
 import './styles.css';
 import Sidebars from './components/Sidebars';
+import SidebarsSu23 from './components/SidebarsSu23';
 import {Routes, Route} from 'react-router-dom';
 import { Control } from './pages/su23/Control';
 import { Env } from './pages/su23/Env';
@@ -26,6 +27,8 @@ import { SQL } from './pages/su23/SQL';
 import { Regex } from './pages/su23/Regex';
 import { Fa23_61A } from './pages/Fa23_61A';
 import { Home } from './pages/Home';
+import { Videos } from './pages/Videos';
+import { Problems } from './pages/Problems';
 
 const App: FC = () => {
   return (
@@ -35,9 +38,12 @@ const App: FC = () => {
           <Route path='/home' element ={<Home/>}/>
           <Route path='/' element={<Fa23_61A/>}/>
           <Route path='/su23' element={<Su23/>}/>
-          <Route path='/week1/intro' element={<Intro/>}/>
-          <Route path='/week1/basics' element={<VarFun/>}/>
-          <Route path='/week1/control' element={<Control/>}/>
+          <Route path='/61a/fa23/videos' element={<Videos/>}/>
+          <Route path='/61a/fa23/problems' element={<Problems/>}/>
+          <Route path='/su23' element={<Su23/>}/>
+          <Route path='/su23/week1/intro' element={<Intro/>}/>
+          <Route path='/su23/week1/basics' element={<VarFun/>}/>
+          <Route path='/su23/week1/control' element={<Control/>}/>
           <Route path='/week2/hofs' element={<Hof/>}/>
           <Route path='/demo/env' element={<Env/>}/>
           <Route path='/demo/nonplussed' element={<Nonplussed/>}/>

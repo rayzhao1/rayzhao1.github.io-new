@@ -1,6 +1,6 @@
 import React from 'react';
 import { FC } from 'react';
-import Link from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 import logo from '../images/favicon.png'
 import PopButton from '../components/PopButton'
 import NavButtonAdj from '../components/NavButtonAdj';

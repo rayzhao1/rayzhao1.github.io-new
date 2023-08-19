@@ -37,15 +37,15 @@ export const SidebarData: SidebarItem[] = [
         subnav: [
             {
                 title: 'Introduction',
-                path: '/week1/intro'
+                path: '/su23/week1/intro'
             },
             {
                 title: 'Variables and Functions',
-                path: '/week1/basics'
+                path: '/su23/week1/basics'
             },
             {
                 title: 'Control & Environment Diagrams',
-                path: '/week1/control'
+                path: '/su23/week1/control'
             }
         ]
     },
