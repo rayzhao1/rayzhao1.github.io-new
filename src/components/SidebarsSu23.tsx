@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import { NavLink, Link, useMatch, useResolvedPath} from 'react-router-dom';
 import { IconContext } from 'react-icons';
 import { AiOutlineMenu, AiFillHome, AiOutlineClose, AiTwotoneFolder, AiTwotoneFolderOpen } from 'react-icons/ai';
-import { SidebarData } from './SidebarData';
 import Submenu from './Submenu';
+import { SidebarData_Su23 } from './SidebarData_Su23';
 
 // Top Bar
 
@@ -69,7 +69,7 @@ const SidebarsSu23: React.FC = () => {
                     <NavMenu to='#' onClick={showSidebar}>
                         <AiOutlineMenu />
                     </NavMenu>
-                    {SidebarData.map((item, index) => {
+                    {SidebarData_Su23.map((item, index) => {
                         return <Submenu item={item} key={index} />
                     })}
                 </SidebarWrap>

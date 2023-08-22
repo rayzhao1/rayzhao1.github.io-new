@@ -7,7 +7,7 @@ import PopButton from '../components/PopButton'
 import NavButtonAdj from '../components/NavButtonAdj';
 import LinkButtonAdj from '../components/LinkButtonAdj';
 import drive from '../images/drive.png';
-import NavButton from '../components/NavButton';
+import AiOutlineDown from 'react-icons/ai'
 
 export const Fa23_61A: FC = () => {
     return (
@@ -65,51 +65,14 @@ export const Fa23_61A: FC = () => {
                 <table className='center_table table_calendar'>
                     <tbody className='tbody_calendar'>
                         <tr>
-                            <td className = "dtext" width='10px'> 7/31 <br/>
-                                <Link to = "https://cs61a.org/lab/lab11/" target="_blank" rel="noopener noreferrer">
-                                    <button className = "orish">Lab11</button>
-                                </Link>
-                                <br/>
-                                <NavButton pathname='/week6/interpreters' children = "Notes" color = 'redish'/> 
-                                <br/>
-                                <PopButton color = "pinkish" msg = "">
-                                    Msg
-                                </PopButton>
-                                
+                            <td className = "td_date">8/21</td>
+                            <td className = "td_date">8/22</td>
+                            <td className = "td_date">8/23
+                                <LinkButtonAdj name = 'Lab00' link='https://cs61a.org/lab/lab00/' color='orish' style='btn_small'></LinkButtonAdj>
+                                <LinkButtonAdj name = 'Disc00' link='https://cs61a.org/disc/disc00/' color='orish' style='btn_small'></LinkButtonAdj>
                             </td>
-                            <td className = "dtext" width='10px'> 8/1 <br/>
-                            <Link to = "https://cs61a.org/disc/disc10/" target="_blank" rel="noopener noreferrer">
-                                    <button className = "orish">Disc10</button>
-                                </Link>
-                                <br/>
-                                <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
-                                <br/>
-                                <PopButton color = "pinkish" msg = "">
-                                    Msg
-                                </PopButton>
-                            </td>
-                            <td className = "dtext" width='10px'> 8/2 <br/>
-                            <Link to = "https://cs61a.org/lab/lab12/" target="_blank" rel="noopener noreferrer">
-                                    <button className = "orish">Lab12</button>
-                                </Link>
-                                <br/>
-                                <NavButton pathname='/week7/regex' children = "Notes" color = 'redish'/> 
-                                <br/>
-                                <PopButton color = "pinkish" msg = "">
-                                    Msg
-                                </PopButton>
-                            </td>
-                            <td className = "dtext" width='10px'> 8/3 <br/>
-                            <Link to = "https://cs61a.org/lab/disc11/" target="_blank" rel="noopener noreferrer">
-                                    <button className = "orish">Disc11</button>
-                                </Link>
-                                <br/>
-                                <NavButton pathname='/week7/SQL' children = "Notes" color = 'redish'/> 
-                                <br/>
-                                <PopButton color = "pinkish" msg = "">
-                                    Msg
-                                </PopButton>
-                            </td>
+                            <td className = "td_date">8/24</td>
+                            <td className = "td_date">8/25</td>
                         </tr>
                     </tbody>
                 </table>

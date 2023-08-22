@@ -1,1 +1,1 @@
-CS 61A Summer 2023
+My personal teaching site

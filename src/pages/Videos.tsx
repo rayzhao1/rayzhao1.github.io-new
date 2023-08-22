@@ -17,6 +17,7 @@ export const Videos: FC = () => {
             <div className='center' style={ style1 }>
                 <iframe 
                     title="Slide" 
+                    loading = 'lazy'
                     src="https://docs.google.com/document/d/e/2PACX-1vQmwSmkjECXc-Pvp7YSliNXmbj_t6uvJEnJOtL4xZ7iP0e5JoyHXYg76YH06y8Ce78dHcpmLKxBu_ud/pub?embedded=true" allowFullScreen 
                     width="800px" height="1200px">
 
