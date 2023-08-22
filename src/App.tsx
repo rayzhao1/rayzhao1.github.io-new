@@ -30,6 +30,27 @@ import { Home } from './pages/Home';
 import { Videos } from './pages/Videos';
 import { Problems } from './pages/Problems';
 
+// Firebase
+import { initializeApp } from "firebase/app";
+import { getDatabase } from "firebase/database";
+import { getAuth } from "firebase/auth";
+
+// Your web app's Firebase configuration
+const firebaseConfig = {
+  apiKey: "AIzaSyD4FaZTHTaeivlJnWZo2V5uIJ3gszuPo-Y",
+  authDomain: "rayzhao1.firebaseapp.com",
+  projectId: "rayzhao1",
+  storageBucket: "rayzhao1.appspot.com",
+  messagingSenderId: "87121406139",
+  appId: "1:87121406139:web:653a2110c45ad67f9aa19e",
+  measurementId: "G-21YGNJLFTW"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const auth= getAuth(app);
+const db = getDatabase(app);
+
 const App: FC = () => {
   return (
     <>

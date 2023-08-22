@@ -7,7 +7,6 @@ import PopButton from '../components/PopButton'
 import NavButtonAdj from '../components/NavButtonAdj';
 import LinkButtonAdj from '../components/LinkButtonAdj';
 import drive from '../images/drive.png'
-import parrot from '/drive.png'
 
 export const Fa23_61A: FC = () => {
     return (
@@ -16,12 +15,41 @@ export const Fa23_61A: FC = () => {
                 <h1>CS 61A</h1> 
                 <h4>Fall 2023</h4>
                 <div className='off_wrapper'>
-                    <div id="off_left">
+                    <div className="off_left">
                         <img src={logo} alt = "hi"></img>
                     </div>
-                    <div id="off_right">
+                    <div className="off_right">
+                        {/*}
+                        <div className='off_wrapper_small'>
+                            <div className='off_left_small'>
+                                <strong>Discussion</strong>
+                            </div>
+                            <div className='off_right_small'>
+                                <strong>Lab</strong>
+                            </div>
+                        </div>
+    */}
                         <table className = 'table_info'>
-                            <tbody className='td_info'>
+                            <tbody>
+                                <div className = 'center'><strong>Whiteboard</strong></div> <br/>
+                                <div className = 'center whiteboard'></div>
+                                {/*}
+                                <tr className='thin'>
+                                    <td className = "thin"><strong>Discussion</strong></td>
+                                    <td className = "thin"><strong>Lab</strong></td>
+                                </tr>
+                                */}
+                                <tr>
+                                    <td className = "center_text"><strong>Discussion</strong>
+                                        <LinkButtonAdj name = 'Temp. Check' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'bluish' style= 'button_med'/>
+                                        <LinkButtonAdj name = 'Lab Q`s' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'bluish' style= 'button_med'/>
+                                    </td>
+                                    <td className = "center_text"><strong>Lab</strong>
+                                        <LinkButtonAdj name = 'Disc. Attend.' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'bluish' style= 'button_med'/>
+                                        <LinkButtonAdj name = 'Lab Attend.' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'bluish' style= 'button_med'/>
+                                    </td>
+                                </tr>
+                                {/*}
                                 <tr className = 'tr_info'>
                                     <th className='center_text'><strong>Discussion</strong></th>
                                     <th className='center_text'><strong>Lab</strong></th>
@@ -34,6 +62,7 @@ export const Fa23_61A: FC = () => {
                                     <td className = 'td_info'><LinkButtonAdj name = 'Disc. Attend.' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'orish' style= 'button_med'/></td>
                                     <td className = 'td_info'><LinkButtonAdj name = 'Lab Attend.' link = "https://forms.gle/NNAa2TrNXsTHwxEq7" color = 'orish' style= 'button_med'/></td>
                                 </tr>
+                                */}
                             </tbody>
                         </table>
                     </div>

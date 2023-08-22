@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 export type ButtonProps = {
   name?: React.ReactNode;
+  border?: boolean;
   style: string;
   link: string;
   color: string;

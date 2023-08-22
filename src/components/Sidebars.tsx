@@ -39,6 +39,7 @@ const SidebarNav = styled.div<{ sidebar: boolean }>`
     width: 250px;
     height: 100vh;
     background-color: black;
+    color: black;
     position: fixed;
     top: 0;
     overflow-y: scroll;
