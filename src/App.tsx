@@ -1,35 +1,35 @@
 import React, { FC } from 'react';
-import { Su23 } from './Su23';
-import { VarFun } from './su23/VarFun'
-import { IntroSu23 } from './su23/IntroSu23'
-import { IntroFa23 } from './fa23/IntroFa23'
+import { Su23 } from './pages/Su23';
+import { VarFun } from './pages/su23/VarFun'
+import { IntroSu23 } from './pages/su23/IntroSu23'
+import { IntroFa23 } from './pages/fa23/IntroFa23'
 //16:04
-import '../styles.css';
-import Sidebars from '../components/Sidebars';
-import SidebarsSu23 from '../components/SidebarsSu23';
+import './styles.css';
+import Sidebars from './components/Sidebars';
+import SidebarsSu23 from './components/SidebarsSu23';
 import {Routes, Route} from 'react-router-dom';
-import { Control } from './su23/Control';
-import { Env } from './su23/Env';
-import { Practice } from './su23/Practice'
-import { Hof } from './su23/Hof'
-import { Rec } from './su23/Rec'
-import { TreeADT } from './su23/TreeADT'
-import { Lists } from './su23/Lists'
-import { IterGen } from './su23/IterGen';
-import { Nonplussed } from './su23/Nonplussed'
-import { Eff } from './su23/Eff';
-import { PathYielder } from './su23/PathYielder'
-import { OOP } from './su23/OOP';
-import { LinkedLists } from './su23/LinkedLists';
-import { Tail } from './su23/Tail';
-import { Interpreters } from './su23/Interpreters';
-import { Scheme } from './su23/Scheme';
-import { SQL } from './su23/SQL';
-import { Regex } from './su23/Regex';
-import { Fa23_61A } from './Fa23_61A';
-import { Home } from './Home';
-import { Videos } from './Videos';
-import { Problems } from './Problems';
+import { Control } from './pages/su23/Control';
+import { Env } from './pages/su23/Env';
+import { Practice } from './pages/su23/Practice'
+import { Hof } from './pages/su23/Hof'
+import { Rec } from './pages/su23/Rec'
+import { TreeADT } from './pages/su23/TreeADT'
+import { Lists } from './pages/su23/Lists'
+import { IterGen } from './pages/su23/IterGen';
+import { Nonplussed } from './pages/su23/Nonplussed'
+import { Eff } from './pages/su23/Eff';
+import { PathYielder } from './pages/su23/PathYielder'
+import { OOP } from './pages/su23/OOP';
+import { LinkedLists } from './pages/su23/LinkedLists';
+import { Tail } from './pages/su23/Tail';
+import { Interpreters } from './pages/su23/Interpreters';
+import { Scheme } from './pages/su23/Scheme';
+import { SQL } from './pages/su23/SQL';
+import { Regex } from './pages/su23/Regex';
+import { Fa23_61A } from './pages/Fa23_61A';
+import { Home } from './pages/Home';
+import { Videos } from './pages/Videos';
+import { Problems } from './pages/Problems';
 
 // Firebase
 import { initializeApp } from "firebase/app";
@@ -93,3 +93,4 @@ const App: FC = () => {
     </>
   );
 }
+export default App
