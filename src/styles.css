@@ -45,6 +45,12 @@ bluish {
   color: #2437DE;
 }
 
+.bluish_inv {
+  border-color: #2437DE;
+  background-color: white;
+  color:#2437DE;
+}
+
 .orish {
   background-color: #E99549
 }
@@ -66,7 +72,7 @@ bluish {
 header {
   margin-top:4rem;
   line-height: 3.7rem;
-  margin-bottom:50px;
+  margin-bottom:4rem;
 }
 html, 
 body {
@@ -247,12 +253,6 @@ td {
   /*top: 19%;*/
 }
 
-.whiteboard {
-  display:flex;
-  border:#2437DE solid 3px;
-  width: 17rem;
-  height: 10rem;
-}
 
 .tr_info, td_info {
   width:0.1%;
@@ -286,6 +286,14 @@ img {
 
 /* *positioning */
 
+.off_wrapper {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  column-gap: 20px;
+}
+
 .off_left {
   width: 17rem;
   height: 17rem;
@@ -311,21 +319,38 @@ img {
   width: 17rem;
   height: 17rem;
   flex-direction:column;
-  border: 1px solid magenta;
   align-items: center;
   margin:0;
-  
-  /*
-  display: table;
-  border: 1px solid magenta;
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  right: 16rem;
-  */
 }
 
-.off_left_small {
+.off_wrapper_small {
+  display: flex;
+  font-size: 0px;
+  height:12rem;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.whiteboard {
+  display:flex;
+  /*border:#2437DE solid 3px;*/
+  margin-top: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  padding:10px;
+  font-size:13px;
+  overflow-y:scroll;
+  width: 17rem;
+  height: 12rem;
+  box-shadow: 0px 0px 13px 2.5px #2437DE;
+}
+
+.info {
+  text-decoration: underline;
+}
+
+.subbox {
   font-size: 15px;
   margin: 0px;
   display: flex;
@@ -334,11 +359,9 @@ img {
   align-items: center;
   flex-direction:column;
   justify-content: space-between;
-  border: 1px solid magenta;
-}
-  
+}  
+
 .btns {
-  border: 1px solid magenta;
   margin: 0px;
   display: flex;
   width: 8rem;
@@ -350,70 +373,6 @@ img {
 }
 
 
-.off_right_small {
-  font-size: 15px;
-  justify-content:center;
-  display: flex;
-  width: 8rem;
-  height: 8.5rem;
-  flex-direction:column;
-  
-  border: 1px solid magenta;
-  /*
-  margin: 0 auto;
-  text-align: center;
-  position: relative;
-  right: 16rem;
-  */
-}
-.col {
-  display:flex;
-  flex-direction:column;
-}
-
-.off_wrapper_small {
-  display: flex;
-  font-size: 0px;
-  height:12rem;
-  border: 1px solid lime;
-  justify-content:space-evenly;
-  flex-wrap: wrap;
-  align-items: center;
-  /*
-  width: 300px;
-  height: 100px;
-  border: 1px solid skyblue;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 100px;
-  */
-}
-
-.off_wrapper {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  align-items: center;
-  column-gap: 20px;
-  /*
-  width: 300px;
-  height: 100px;
-  border: 1px solid skyblue;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 100px;
-  */
-}
-
-#off_anchor {
-  width: 300px;
-  height: 100px;
-  border: 1px solid skyblue;
-  margin: 0 auto;
-  text-align: center;
-  line-height: 100px;
-}
-
 .center {
   margin: 0;
   position: absolute;
@@ -421,44 +380,17 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
-.thin {
-  height: 0px;
-  padding:0px;
-  margin:0px;
-  border: 2px solid red;
-}
-
-.fat {
-  height: 10px;
-  border: 2px solid red;
+.center_table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .center_text {
   text-align: center;
 }
 
-.off_center_l {
-  display: flex;
-  margin-left: auto;
-  /*margin-right: auto;*/
-  margin-bottom: 40px;
-  width:10%;
-  position:absolute;
-  left:50%;
-  margin-left:-13rem;
-  /*margin-left: -18rem;*/
-}
-
-.off_center_r {
-  display: flex;
-  margin-right: auto;
-  margin-bottom: 6rem;
-  position:relative;
-  right:50%;
-  margin-right:-30rem;
-  /*margin-right: -18rem;*/
-
+.pad {
+  height:10rem;
 }
 
 /* *buttons */
@@ -480,7 +412,7 @@ button:hover {
 .button_drive {
   /*background-color: black;*/
   /*overflow: hidden;*/
-  margin-top: 4rem;
+  margin-top: 2.5rem;
   height: 6rem;
   width: 6rem;
   background-color: white;
@@ -518,18 +450,28 @@ background-color: #E74E4C;
 .button_med {
   font-weight: 900;
   border-radius: 20px;
-  color:#2437DE;
   height:42px;
   width: 100px;
-  border-width: 2px;
-  border-style: solid;
+  border: 2px solid;
   font-size: 13px;
   margin-top: -30px;
   padding: 0%;
   margin-bottom: -30px;
 }
 
-.button_med:hover{
+.btn_med_inv {
+  font-weight: 900;
+  border-radius: 20px;
+  height:42px;
+  width: 120px;
+  border: 3px solid;
+  font-size: 14px;
+  margin-top: -30px;
+  padding: 0%;
+  margin-bottom: -30px;
+}
+
+.btn_med_inv:hover{
   box-shadow: none;
   background-color:#2437DE;
   color:white;
