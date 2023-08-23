@@ -1,8 +1,10 @@
+'use client'
+
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import { NavLink, Link, useMatch, useResolvedPath} from 'react-router-dom';
+import { NavLink, Link} from 'react-router-dom';
 import { IconContext } from 'react-icons';
-import { AiOutlineMenu, AiFillHome, AiOutlineClose, AiTwotoneFolder, AiTwotoneFolderOpen } from 'react-icons/ai';
+import { AiFillHome, AiOutlineClose, AiTwotoneFolder, AiTwotoneFolderOpen } from 'react-icons/ai';
 import { SidebarData_Fa23 } from './SidebarData_Fa23';
 import Submenu from './Submenu';
 
